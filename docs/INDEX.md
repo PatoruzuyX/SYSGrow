@@ -1,5 +1,16 @@
 # SYSGrow Documentation Index
 
+## Engineering governance (G0 candidate)
+
+- [Agent instructions](../AGENTS.md), [engineering guidelines](guidelines.md), [security policy](../SECURITY.md)
+- [Roadmap](../ROADMAP.md), [backlog](../BACKLOG.md)
+- [Current foundation architecture and target invariants](architecture/FOUNDATION_BASELINE.md), [candidate ADR register](architecture/adr/README.md)
+- [CP0–CP2 qualification](qualification/CP0-CP2.md), [44 open findings](qualification/FINDINGS.md)
+- [Foundation ExecPlan](plans/SYSGROW-FOUNDATION-001.md), [bounded remediation ExecPlans](plans/REMEDIATION.md)
+
+Historical setup/architecture material below is retained; production safety is not qualified. Governance proposals become effective only on owner-approved integration; implementation and activation require separate authorization.
+
+
 This index is organized for practical setup first, then reference material.
 
 ## Start Here
@@ -57,3 +68,4 @@ If you are installing SYSGrow on Raspberry Pi, follow this order:
 Some documents in this repository are engineering notes, feature audits, or implementation records from earlier phases. Keep them for internal traceability, but they are not required for first-time installation.
 
 For new users, only the docs in the "Start Here" section are required.
+

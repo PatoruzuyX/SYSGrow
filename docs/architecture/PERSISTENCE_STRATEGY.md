@@ -1,5 +1,8 @@
 # Persistence Strategy
 
+> **G0 reconciliation (2026-11-27):** Preserve the SQLite/JSON decision rules below. Current lightweight store uses advisory lock files and atomic replacement under var/; this is not atomic read-modify-write or stale-lock recovery. Personalized profiles/model registry use separate stores. See [foundation baseline](FOUNDATION_BASELINE.md), F-029–032 and EP-004/CP4 for current risks. This notice does not qualify concurrent writers or database recovery.
+
+
 > **Status:** Living document — updated as new features land.
 > **Last updated:** 2026-02
 
@@ -91,3 +94,4 @@ acceptable because writes are rare (settings changes, training completion).
 | Storing time-series in JSON files | Use a SQLite table with date-based retention |
 | Duplicating the same data in DB *and* JSON | Pick one canonical source; derive the other if needed |
 | Using `PersistentStore` for high-frequency writes (> 1/s) | Use SQLite with WAL mode |
+

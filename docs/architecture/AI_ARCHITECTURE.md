@@ -1,5 +1,8 @@
 # AI Services Architecture
 
+> **G0 reconciliation (2026-11-27):** Existing AI architecture is retained. Model readiness, forecasting validity, artifact trust and registry integrity remain unqualified (F-006–008, F-032). See [foundation baseline](FOUNDATION_BASELINE.md) and [CP4 plan](../plans/SYSGROW-FOUNDATION-001.md). Described examples and performance figures are not fresh measurements or production eligibility evidence. AI remains advisory until separately qualified.
+
+
 **Deep dive into SYSGrow's machine learning and AI systems**
 
 ---
@@ -1093,3 +1096,4 @@ pip list | grep -E "openai|anthropic|torch|transformers"
 ---
 
 **Questions?** Check the [FAQ](FAQ.md) or open an issue on GitHub.
+

@@ -1,0 +1,25 @@
+# SYSGrow engineering instructions
+
+Status: proposed by G0; effective as repository governance only upon owner-approved integration. G0 authorizes documentation only. No production activation is authorized.
+
+## Mandatory reading and authority
+
+- Read this file, [engineering guidelines](docs/guidelines.md), [security policy](SECURITY.md), [architecture baseline](docs/architecture/FOUNDATION_BASELINE.md), [decision register](docs/architecture/adr/README.md), [findings](docs/qualification/FINDINGS.md), and the applicable [ExecPlan](docs/plans/SYSGROW-FOUNDATION-001.md) before editing.
+- Explicit owner authorization is the authority for work. Accepted ADRs govern architectural choices; proposals and roadmap entries do not authorize implementation. If instructions conflict, stop and report the conflict. Source is evidence of current behaviour, not automatic approval of it.
+- Tool-specific guidance in [.github/copilot-instructions.md](.github/copilot-instructions.md) and [.codex_profile.md](.codex_profile.md) supplements these rules. Retain frontend design tokens, both themes, accessibility and existing JS hooks. Verify historical paths and commands before using them.
+- Keep SYSGrow edge-first and independently usable without K.I.T.T., cloud, or external AI. Do not add new infrastructure or rewrite working subsystems without an accepted ADR and bounded authorization.
+
+## Working rules
+
+1. Pin remote main and compare the authorized baseline. Inspect local status, branches and worktrees when available; never assume a clean environment. Stop on material scope conflict, unknown ownership or unexpected changes. Remote-only sessions must disclose missing local evidence.
+2. Use a dedicated branch/worktree and a bounded ExecPlan with findings, exclusions, tests, rollback and review gates. Never force-push, delete historical branches, alter repository settings, merge or deploy without separate owner authorization. Do not modify unrelated work.
+3. Preserve previous completed functionality, API compatibility and historical evidence; reconcile backlog items before reopening them. Prefer existing services, domain contracts and repositories over duplicate owners.
+4. Treat physical operation, broker/firmware changes, migrations, data access, credentials and external provider calls as explicitly gated. Use synthetic data, isolated temporary databases and simulated devices by default. No real device operation or live private data in qualification.
+5. All energizing paths must eventually enforce exclusive runtime ownership, resource authorization, deterministic safety and bounded operation; these are required target invariants, not claims of current compliance. No external AI safety override. Unknown physical outcomes are not success. See SAFE-001–015 in the foundation baseline.
+6. Preserve current safeguards. Do not activate expanded autonomous, shared-resource or external physical-control features while Critical findings remain unresolved. A successful software test does not certify hardware.
+7. Run applicable lint, format, tests and security checks; report commands, exact revision, outcomes, skips and blockers. Tests must exercise real service composition, negative paths and fault conditions where relevant. No fabricated evidence.
+8. Obtain independent review of the exact candidate HEAD, resolve review findings or document owner-approved disposition, verify CI and diff scope, then request separate integration approval. Re-review material changes. No automatic merge. Deployment and activation require separate qualification and approval.
+
+## Closeout
+
+Report baseline and final HEAD, changed paths, finding dispositions, tests and evidence, unresolved risks, decisions made without explicit guidance, review and integration status. Never close findings merely because documentation or a plan exists.

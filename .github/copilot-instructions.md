@@ -1,6 +1,9 @@
 <!-- Auto-generated guidance for AI coding agents working on SYSGrow -->
 # GitHub Copilot Instructions — SYSGrow backend
 
+> **G0 reconciliation:** [AGENTS.md](../AGENTS.md) and [engineering guidelines](../docs/guidelines.md) are the proposed canonical repository instructions; effective upon owner-approved integration. This tool-specific guidance is retained for context. Verify historical paths/commands against the pinned source before use. Do not start a live runtime, run hardware, modify deployment or merge without explicit authorization; see [foundation findings](../docs/qualification/FINDINGS.md).
+
+
 Purpose: short, actionable guidance so an AI code assistant is immediately productive in this repository.
 
 - **Big picture:** The backend is a modular Flask application. Key layers:
@@ -67,3 +70,4 @@ Especially for new features or architectural changes. The `docs/` folder contain
   - CI/deploy scripts (`Dockerfile`, `docker-compose.yml`, `deployment/`) and systemd service files.
 
 If any of these links point to missing files or you want more depth in a particular area (tests, ML pipeline, infra), tell me which area to expand and I will iterate.
+
