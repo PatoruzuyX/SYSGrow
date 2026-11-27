@@ -8,9 +8,9 @@ Status: proposal for owner review; no implementation authority beyond G0 documen
 |---|---|---|
 | CP0–CP2 | Baseline, architecture, security and physical safety | Reports delivered; acceptance pending; safety NOT QUALIFIED |
 | G0 | Canonical engineering governance | Documentation-only candidate; independent review and owner integration approval |
-| R1 | Critical containment and exclusive edge runtime | EP-001, early EP-003C containment; no production activation |
-| R2 | Canonical command and result contracts | EP-003A/B; EP-007 authorization boundaries |
-| R3 | Irrigation, lifecycle, persistence and deployment | EP-002, EP-003C–F, EP-004/005; applicable safety gates |
+| R1 | Critical containment and exclusive edge runtime | Accepted foundational contracts; EP-001 containment and early EP-003C containment with EP-003A/EP-007/EP-004 minimum interfaces; no full closure or production activation |
+| R2 | Canonical command and result contracts | EP-003A/B; EP-007 authorization boundaries; EP-004 transactional prerequisites; qualify EP-001 only after dependent enforcement |
+| R3 | Irrigation, lifecycle, persistence and deployment | EP-002, EP-003C–F, remaining EP-004/005/007; final cross-package qualification and applicable safety gates |
 | CP3 | Performance/deployment benchmarks | Reproducible workload and measured budgets |
 | CP4 | Agricultural intelligence qualification | Data provenance, temporal validation, ML promotion and fallback |
 | CP5 | Simulation/testing closeout | Risk-based coverage, contract/fault tests and CI matrix |
@@ -29,3 +29,5 @@ Simulation and regression tests accompany remediation from R1, not only CP5. Non
 - Fleet: opt-in aggregation first; distributed/federated learning only after privacy, poisoning and heterogeneous-data qualification. No mandatory cloud dependency.
 
 Measure water and energy per yield, climate-range time, prediction errors, verified operation and intervention rate before competitive claims. Existing v3.1/v3.2/v3.x backlog features are retained as historical candidates, not committed release dates. No version allocation or delivery date is approved here.
+
+The R1–R3 sequence is a proposed checkpoint-level ordering, not permission to implement or a promise that entire packages are independent. Use the staged dependency graph in [REMEDIATION.md](docs/plans/REMEDIATION.md); full finding closure waits for all relevant enforcement, transaction, recovery and device-specific evidence.

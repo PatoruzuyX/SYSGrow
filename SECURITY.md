@@ -19,3 +19,9 @@ Only an exclusive runtime may execute physical operations. Enforce device-specif
 ## Release gates
 
 Close applicable Critical/High safety issues with source, synthetic tests, independent review and device-specific qualification as applicable. Require owner approval for integration, deployment and activation as distinct gates. No secrets, live private data, provider calls or physical operation in read-only or synthetic qualification. No default universal safe state or runtime limit is approved.
+
+## G0.1 containment and emergency boundaries
+
+Existing installations are not grandfathered as safe. Before any separately authorized change, the owner records affected installation scope, existing automation and unresolved hazards, a device-specific risk assessment, interim containment and escalation/recovery arrangements. This documentation does not instruct or authorize live shutdown, reconfiguration or changes to physical equipment. If safe operation cannot be established, seek a competent device-specific assessment and separate owner disposition; do not infer permission to continue or expand operation from G0.
+
+Exclusive runtime authority covers ordinary software commands. Independent protective hardware and separately qualified emergency intervention remain available without granting unrestricted normal control authority. Uncertain physical state or recovery evidence must inhibit ordinary energization across process replacement, lock expiry and restart. An owner cannot waive a mandatory safety gate by ordinary risk acceptance. See [target contracts](docs/architecture/FOUNDATION_BASELINE.md) and [remediation plans](docs/plans/REMEDIATION.md).

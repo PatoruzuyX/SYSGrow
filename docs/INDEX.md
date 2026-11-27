@@ -5,7 +5,7 @@
 - [Agent instructions](../AGENTS.md), [engineering guidelines](guidelines.md), [security policy](../SECURITY.md)
 - [Roadmap](../ROADMAP.md), [backlog](../BACKLOG.md)
 - [Current foundation architecture and target invariants](architecture/FOUNDATION_BASELINE.md), [candidate ADR register](architecture/adr/README.md)
-- [CP0–CP2 qualification](qualification/CP0-CP2.md), [44 open findings](qualification/FINDINGS.md)
+- [CP0–CP2 qualification](qualification/CP0-CP2.md), [44 open findings](qualification/FINDINGS.md), [G0/G0.1 review record](qualification/G0-REVIEW.md)
 - [Foundation ExecPlan](plans/SYSGROW-FOUNDATION-001.md), [bounded remediation ExecPlans](plans/REMEDIATION.md)
 
 Historical setup/architecture material below is retained; production safety is not qualified. Governance proposals become effective only on owner-approved integration; implementation and activation require separate authorization.

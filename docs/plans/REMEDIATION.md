@@ -23,7 +23,7 @@ Critical F-033/034/035 plus F-002/003/004/016/025/026/027/039/040/041/042/044. P
 | EP-003E | F-003/039; execution-time eligibility and bounded calibration; preserve separate measured flow and preferences | stale/missing data blocks autonomous action; compatible real service composition; measured duration/volume traceable; FT-005/006 |
 | EP-003F | F-002/025/040; independent operating bounds, device-specific shutdown and restart reconciliation | process/network failure cannot exceed qualified limits; unknown shutdown blocks ordinary operation; simulation plus separately approved device-specific HIL; FT-013/015/022 |
 
-Dependencies: EP-001 ownership; EP-007 owns resource authorization and broker/maintenance trust; EP-004 owns transaction semantics; EP-002 coordinates shutdown. Suggested integration A -> B -> C -> D -> E -> F, early C containment may precede adapter redesign. No raw protocol bypass, new cloud/AI, universal safe limits or hardware activation. Full qualification requires all applicable Critical findings and device safety evidence, not just software tests.
+Dependencies: EP-001 ownership; EP-007 owns resource authorization and broker/maintenance trust; EP-004 owns transaction semantics; EP-002 coordinates shutdown. Use the staged dependency graph below, not a circular whole-package dependency. Early C containment may precede adapter redesign only with the minimum admission and transaction contracts and no claim of full closure. No raw protocol bypass, new cloud/AI, universal safe limits or hardware activation. Full qualification requires all applicable Critical findings and device safety evidence, not just software tests.
 
 ## EP-004 — SYSGROW-PERSISTENCE-INTEGRITY-001
 
@@ -35,7 +35,7 @@ F-010/011/013/015. Reconcile pyproject and requirements; qualify generated core/
 
 ## EP-006 — SYSGROW-GOVERNANCE-001
 
-F-012/014/020/021. G0 documentation only; proposed branch docs/sysgrow-governance-001. Preserve all historical records and refs, add canonical guidance, evidence, candidate ADRs, roadmap and plan links. G0 acceptance: all 44 OPEN, all four Critical mapped to gates; documentation-only diff, links, independent review, exact HEAD CI and owner approval. Branch enforcement and individual historical recovery remain open; settings changes and branch deletion excluded. No finding automatically closed.
+F-012/014/020/021. G0 documentation only; proposed branch docs/sysgrow-governance-001. Preserve all historical records and refs, add canonical guidance, evidence, candidate ADRs, roadmap and plan links. G0/G0.1 acceptance: all 44 OPEN, all four Critical mapped to gates; documentation-only diff, traceable original reports, verified links and evidence anchors, three independently generated exact-HEAD reviews, successful applicable exact-HEAD CI and separate owner integration approval. See [G0 review record](../qualification/G0-REVIEW.md). Branch enforcement and individual historical recovery remain open; settings changes and branch deletion excluded. No finding automatically closed.
 
 ## EP-007 — SYSGROW-SECURITY-BOUNDARIES-001
 
@@ -75,3 +75,46 @@ CP4 F-006/007/008/009/017/032: data provenance, leakage-free temporal evaluation
 | FT-024 | Firmware trust absent | Block update |
 
 None executed by CP2 or G0. Test real composed services using synthetic hardware; do not confuse simulation with actual device certification. Report exact revision, commands, outcomes, failures and limitations. No merge without independent review and explicit owner approval; activation separate.
+
+## G0.1 proposed checkpoint dependency graph
+
+This is a planning correction, not authorization or accepted architecture. Dependencies below are checkpoint-level; cross-package cooperation is not a declaration that a complete dependent package is already qualified. Each implementation checkpoint requires its own owner authorization, exact baseline, exclusions, test matrix, rollback/recovery procedure and review.
+
+| Checkpoint | Prerequisites | Bounded exit |
+|---|---|---|
+| D0 | Qualified G0 integration | Accept relevant individual ADRs and contracts for ownership/fencing (EP-001), command admission (EP-003A), principal/resource authorization (EP-007), transaction/claim/recovery (EP-004), and outcome/recovery (EP-003B/F); no physical activation |
+| R1a | D0 | EP-001 containment: acquire exclusive authority before control workloads; construction-only non-owner path; minimum deny-by-default guard at every known command boundary using EP-003A/EP-007 contracts; no full EP-001 closure |
+| R1b | D0, R1a | EP-003C containment: block unapproved/stale/disabled/cancelled ordinary execution at admission using EP-004 minimum atomic transaction/claim contract and EP-007 identity contract; unresolved/unsupported paths denied; no full EP-003C closure |
+| R2a | R1a, R1b | EP-003A/B and EP-007 applicable enforcement: inventory all command origins, canonical classification, authorization, result contracts and real synthetic composition; EP-004 minimum transaction/recovery implementation qualified |
+| R2b | R2a | EP-001 enforcement qualification across startup/CLI/workers, adapters and recovery; complete ownership evidence or retain F-001 OPEN |
+| R3a | R2a, R2b | EP-003C/D/E and remaining EP-004: transactional authorization, reservations, topology, observation freshness, calibration and durable recovery/quarantine |
+| R3b | R3a | EP-002 and EP-003F: coordinated quiescence, invalidated queued/in-flight work, shutdown and independent protection design; EP-005/remaining EP-007 integration and deployment profile evidence as applicable |
+| Q | R3a, R3b | Cross-package negative/concurrency/fault qualification; separately approved device-specific qualification as applicable; independent review and owner disposition per finding. No deployment or activation by this checkpoint alone |
+
+Design work for later checkpoints may proceed in parallel if separately authorized; final closure cannot bypass prerequisites. Early containment is explicitly not final remediation and cannot expand autonomous operation.
+
+### Required acceptance refinements
+
+- EP-001: new ownership starts inhibited; durable outstanding operations and quarantine survive crash, lock release, lease expiry and restart. Unavailable/corrupt recovery evidence fails closed; stale owner/delayed command cannot gain authority. Test process separation and actual shared lock boundary, not just threads. Qualify non-owner denial across CLI, web, scheduled, discovery, calibration and adapter paths.
+- EP-002: stop admission, invalidate queued work, account for in-flight effects, reconcile device-specific state, then dispose/release; process termination is a separate failure path. Preserve independent protection and do not mark shutdown verified from successful thread exit.
+- EP-003A/B: inventory every command origin and adapter path including non-ON state-changing commands; classify physical effect, reject unsupported commands, and apply resource/principal/owner/policy/freshness checks at final dispatch. Use the [outcome contract](../architecture/FOUNDATION_BASELINE.md); failure is not proof of OFF and stale/duplicate acknowledgement cannot promote state.
+- EP-003C: define approval, cancellation, delayed timing, expiry, configuration and permission changes relative to the atomic dispatch admission point. Delay cannot be bypassed by a prior scheduled time. After dispatch, cancellation enters reconciliation, not false non-execution. Record durable decision/failure.
+- EP-003D/E: bind authorizations and reservations to actual physical resource/topology, identity and owner; revalidate changed associations and fresh observations; preserve durable quarantine independently of lock lifetime. Reject invalid calibration/measurement and unqualified device limits.
+- EP-003F: independent protection and emergency authority are distinct from normal software command authority; qualify device-specific state and bounds, including loss of process, broker and power as applicable. Hardware-in-loop and actual activation require separate approval.
+
+### Additional synthetic test designs (not executed)
+
+| ID | Condition | Required outcome |
+|---|---|---|
+| FT-025 | Owner crashes with outstanding operation | Replacement owner starts inhibited |
+| FT-026 | Restart with quarantined resource | Ordinary use remains blocked |
+| FT-027 | Queued authorization revoked or stale | No dispatch |
+| FT-028 | Resource association changes after approval | Reject stale authority |
+| FT-029 | Transport fails after simulated delivery | Physical outcome remains unknown |
+| FT-030 | Delayed request retains original due timestamp | No premature execution |
+| FT-031 | Disposed controller retains queued work | No command authority |
+| FT-032 | Duplicate/out-of-order acknowledgement | No incorrect state promotion |
+| FT-033 | Runtime authority unavailable | Independent protection remains available in simulation; physical qualification separate |
+| FT-034 | Persistence unavailable or corrupt during reconciliation | Fail closed |
+
+Map FT-025/026/034 to EP-001/003D/004, FT-027/028/030 to EP-003A/C/E/007, FT-029/032 to EP-003B/F, FT-031 to EP-002, FT-033 to EP-003F. Report synthetic versus device-specific evidence separately.

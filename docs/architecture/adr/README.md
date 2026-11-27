@@ -18,3 +18,7 @@ G0: no ADR accepted by this change alone. Owner authorization of documentation-o
 | ADR-012 | Shared knowledge consent and provenance | Prevent unconsented disclosure and unreliable recommendations | CP6 |
 
 Before acceptance, create a dated individual ADR with context, alternatives, decision, consequences, dependencies, owner approval and evidence. Supersession must link the prior decision; do not silently edit history. No candidate currently has an accepted status.
+
+## Acceptance versus qualification
+
+The qualification dependency column identifies downstream evidence needed for implementation/activation, not automatically a prerequisite to accept a design. An individual ADR may be accepted before implementation only with a bounded contract, alternatives, known risks, unresolved questions, a validation plan and explicit owner approval. Mark proposed, accepted, superseded or rejected independently of implementation status. Record implementation authorization, verification and integration separately; physical qualification and activation require their own evidence and owner approval. No G0/G0.1 ADR is accepted by the documentation change.

@@ -1,12 +1,12 @@
 # SYSGrow engineering instructions
 
-Status: proposed by G0; effective as repository governance only upon owner-approved integration. G0 authorizes documentation only. No production activation is authorized.
+Status: G0/G0.1 candidate; repository governance becomes effective only through explicit owner-approved integration of the qualified revision. G0/G0.1 authorize documentation only. No ADR acceptance, runtime remediation, deployment or production activation follows from integration. Record the accepted governance commit, PR, approving owner and review/CI evidence in the integration record; see [G0 review record](docs/qualification/G0-REVIEW.md).
 
 ## Mandatory reading and authority
 
 - Read this file, [engineering guidelines](docs/guidelines.md), [security policy](SECURITY.md), [architecture baseline](docs/architecture/FOUNDATION_BASELINE.md), [decision register](docs/architecture/adr/README.md), [findings](docs/qualification/FINDINGS.md), and the applicable [ExecPlan](docs/plans/SYSGROW-FOUNDATION-001.md) before editing.
 - Explicit owner authorization is the authority for work. Accepted ADRs govern architectural choices; proposals and roadmap entries do not authorize implementation. If instructions conflict, stop and report the conflict. Source is evidence of current behaviour, not automatic approval of it.
-- Tool-specific guidance in [.github/copilot-instructions.md](.github/copilot-instructions.md) and [.codex_profile.md](.codex_profile.md) supplements these rules. Retain frontend design tokens, both themes, accessibility and existing JS hooks. Verify historical paths and commands before using them.
+- Tool-specific guidance in [.github/copilot-instructions.md](.github/copilot-instructions.md) and [.codex_profile.md](.codex_profile.md) supplements these rules only within the explicitly authorized task. Historical commands and examples are not authorization. Repository-wide rules, security gates, applicable accepted ADRs and the authorized ExecPlan constrain tool profiles; no incidental cleanup or scope expansion. If those authorities conflict, stop and obtain owner resolution; do not select the least restrictive instruction. Retain frontend design tokens, both themes, accessibility and existing JS hooks. Verify historical paths and commands before using them.
 - Keep SYSGrow edge-first and independently usable without K.I.T.T., cloud, or external AI. Do not add new infrastructure or rewrite working subsystems without an accepted ADR and bounded authorization.
 
 ## Working rules
@@ -18,7 +18,7 @@ Status: proposed by G0; effective as repository governance only upon owner-appro
 5. All energizing paths must eventually enforce exclusive runtime ownership, resource authorization, deterministic safety and bounded operation; these are required target invariants, not claims of current compliance. No external AI safety override. Unknown physical outcomes are not success. See SAFE-001–015 in the foundation baseline.
 6. Preserve current safeguards. Do not activate expanded autonomous, shared-resource or external physical-control features while Critical findings remain unresolved. A successful software test does not certify hardware.
 7. Run applicable lint, format, tests and security checks; report commands, exact revision, outcomes, skips and blockers. Tests must exercise real service composition, negative paths and fault conditions where relevant. No fabricated evidence.
-8. Obtain independent review of the exact candidate HEAD, resolve review findings or document owner-approved disposition, verify CI and diff scope, then request separate integration approval. Re-review material changes. No automatic merge. Deployment and activation require separate qualification and approval.
+8. Obtain independent review of the exact candidate HEAD, resolve review findings, verify CI and diff scope, then request separate integration approval. Missing mandatory gate evidence, unresolved defects that invalidate a checkpoint invariant, and incomplete required independent review cannot be waived as ordinary residual risk. Out-of-scope baseline risks may remain open under documented owner disposition, containment and activation restrictions. Re-review material changes. No automatic merge. Deployment and activation require separate qualification and approval.
 
 ## Closeout
 

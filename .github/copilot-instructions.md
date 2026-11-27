@@ -7,10 +7,10 @@
 Purpose: short, actionable guidance so an AI code assistant is immediately productive in this repository.
 
 - **Big picture:** The backend is a modular Flask application. Key layers:
-  - **Web / API layer:** [app/blueprints](app/blueprints) + Flask routes. Use `run_server.py` / `smart_agriculture_app.py` to run.
-  - **Service layer:** [app/services](app/services) contains business logic (e.g., `GrowthService`, `DeviceService`, `MLService`). Prefer modifying/adding services here rather than placing business logic in controllers.
-  - **Domain & models:** [app/models](app/models) and [app/schemas](app/schemas) define persistent state and API payloads.
-  - **Infrastructure:** database and device integrations live under [infrastructure](infrastructure) and [app/extensions.py] (shared singletons).
+  - **Web / API layer:** [app/blueprints](../app/blueprints) + Flask routes. Use `run_server.py` / `smart_agriculture_app.py` to run.
+  - **Service layer:** [app/services](../app/services) contains business logic (e.g., `GrowthService`, `DeviceService`, `MLService`). Prefer modifying/adding services here rather than placing business logic in controllers.
+  - **Domain & models:** `app/models` (historical path: `app/models`) and [app/schemas](../app/schemas) define persistent state and API payloads.
+  - **Infrastructure:** database and device integrations live under [infrastructure](../infrastructure) and [app/extensions.py] (shared singletons).
 
 - **Run / dev workflows (exact commands):**
   - Create venv and activate (Windows):
@@ -55,11 +55,11 @@ Purpose: short, actionable guidance so an AI code assistant is immediately produ
   - `docs/INDEX.md` and `docs/architecture/ARCHITECTURE.md` for design rationale
 
 - **Files to inspect first when onboarding:**
-  - [README.md](README.md) for setup and high-level architecture
-  - [app/extensions.py](app/extensions.py) for shared singletons
-  - [app/config.py](app/config.py) and [ops.env.example](ops.env.example) for runtime configuration
-  - [app/services](app/services) to learn where business logic lives
-  - [docs/INDEX.md](docs/INDEX.md) and [docs/architecture/ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md) for design rationale
+  - [README.md](../README.md) for setup and high-level architecture
+  - [app/extensions.py](../app/extensions.py) for shared singletons
+  - [app/config.py](../app/config.py) and [ops.env.example](../ops.env.example) for runtime configuration
+  - [app/services](../app/services) to learn where business logic lives
+  - [docs/INDEX.md](../docs/INDEX.md) and [docs/architecture/ARCHITECTURE.md](../docs/architecture/ARCHITECTURE.md) for design rationale
 
 - **Update documentation as you go**
 Especially for new features or architectural changes. The `docs/` folder contains design docs, architecture decisions, and sprint reports that should be updated to reflect any significant changes.
@@ -71,3 +71,6 @@ Especially for new features or architectural changes. The `docs/` folder contain
 
 If any of these links point to missing files or you want more depth in a particular area (tests, ML pipeline, infra), tell me which area to expand and I will iterate.
 
+## G0.1 authority clarification
+
+All historical commands, setup workflows and code examples above are informational unless separately authorized and qualified against the pinned source. Database initialization and server startup are not read-only actions. Never execute them during read-only qualification or against a live installation; use isolated synthetic fixtures only within approved scope. Repository-wide AGENTS.md, security policy, applicable accepted ADRs and the bounded ExecPlan govern. The historical guidance is retained; relative link destinations are reconciled where the pinned repository contains the target. Missing historical targets are shown as literal references, not asserted to exist.

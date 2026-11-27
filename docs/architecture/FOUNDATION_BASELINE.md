@@ -65,3 +65,24 @@ Human/API/scheduler/controller/AI intent -> verified identity and resource autho
 | SAFE-015 | Consequential operations have traceable outcomes |
 
 Device-specific qualification: GPIO safe boot/failure, MQTT/Zigbee delivery and state, Wi-Fi trusted destination/response, Modbus response validation, ESP32 firmware/transaction safety. Pumps/valves, heaters, humidifiers, lights, ventilation and any CO2 equipment require device-appropriate safeguards and safe states. No hardware certification is established.
+
+## G0.1 target contract refinements (proposed; not implementation evidence)
+
+Ownership acquisition grants reconciliation authority only, not energization permission. The runtime starts inhibited; durable outstanding operations and resource quarantine must be recovered before normal command admission. An OS lock may disappear after process death; lock acquisition is not proof of physical state. Unresolved or unavailable recovery evidence remains fail-closed, including loss/corruption of the persistence store. Persist or otherwise establish an independently reliable record of operation identity, resource identity, owner/fence, outcome and unresolved quarantine before consequential dispatch; do not lose the quarantine when reservations expire. Recovery must account for commands in flight, delayed delivery and stale owners. If an old owner or command cannot be reliably excluded, do not resume ordinary operation.
+
+Normal software actuation is exclusively owned; independent protective hardware and narrowly scoped, qualified emergency recovery are distinct from routine command authority. Never disable or obstruct independent protection. Define recovery access, authority, audit evidence and safe limits per device; emergency authority cannot be reused to authorize normal energization.
+
+A command authorization is scoped to the operation, authenticated principal or explicitly authorized service identity, physical resource/topology, policy/configuration revision, runtime owner/fence and validity period. Revalidate these and required fresh observations at the final admission boundary. Cancellation, expiry, permission revocation, policy changes, resource reassignment or owner replacement invalidate stale admission. Define the dispatch linearization point: before it a cancellation that wins prevents dispatch; after it reconcile an outstanding physical operation instead of claiming it never ran. Use durable identifiers, bounded retries and correlation; do not replay uncertain consequential actions blindly.
+
+| Outcome | Evidence required |
+|---|---|
+| Requested | Identifiable intent received; no physical claim |
+| Authorized | Current principal, resource, policy, owner and safety admission checks passed; no dispatch claim |
+| Dispatched | Transport/adapter submission established; no physical claim |
+| Acknowledged | Correlated, defined acknowledgement of the expected operation; acknowledgement alone is not physical verification |
+| Verified | Fresh, device-appropriate evidence of expected physical state; distinguish reported/logical state from physical verification |
+| Rejected | Policy denied admission before consequential dispatch |
+| Failed | A known processing/transport/device failure; does not establish physical OFF |
+| Unknown | Physical outcome cannot be established, including ambiguous delivery, missing/stale evidence or failed reconciliation |
+
+Failure of a stage does not erase possible device effects. Track operation processing and physical-state certainty separately. For uncertain shutdown, retain durable quarantine until qualified reconciliation; never promote a stale acknowledgement or a successful publish into physical verification. See [remediation plans](../plans/REMEDIATION.md).
