@@ -22,3 +22,7 @@ Before acceptance, create a dated individual ADR with context, alternatives, dec
 ## Acceptance versus qualification
 
 The qualification dependency column identifies downstream evidence needed for implementation/activation, not automatically a prerequisite to accept a design. An individual ADR may be accepted before implementation only with a bounded contract, alternatives, known risks, unresolved questions, a validation plan and explicit owner approval. Mark proposed, accepted, superseded or rejected independently of implementation status. Record implementation authorization, verification and integration separately; physical qualification and activation require their own evidence and owner approval. No G0/G0.1 ADR is accepted by the documentation change.
+
+## G0.2 D0 contract ownership
+
+All 12 candidate ADRs remain proposed. [D0 contract matrix](../../plans/D0-CONTRACTS.md) assigns required interfaces, accountable owners, consumers and validation prerequisites; ADR-004 candidate scope is extended to explicitly include principal/resource authorization (EP-007) and its interface with command admission (EP-003A), without accepting the decision. ADR-005/006 coordinate durable quarantine and recovery. Design acceptance requires resolving the listed questions and validation plans, not downstream implementation success. No design acceptance by G0.2.

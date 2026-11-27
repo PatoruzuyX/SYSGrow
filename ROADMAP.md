@@ -7,10 +7,11 @@ Status: proposal for owner review; no implementation authority beyond G0 documen
 | Phase | Objective | Gate |
 |---|---|---|
 | CP0–CP2 | Baseline, architecture, security and physical safety | Reports delivered; acceptance pending; safety NOT QUALIFIED |
-| G0 | Canonical engineering governance | Documentation-only candidate; independent review and owner integration approval |
-| R1 | Critical containment and exclusive edge runtime | Accepted foundational contracts; EP-001 containment and early EP-003C containment with EP-003A/EP-007/EP-004 minimum interfaces; no full closure or production activation |
-| R2 | Canonical command and result contracts | EP-003A/B; EP-007 authorization boundaries; EP-004 transactional prerequisites; qualify EP-001 only after dependent enforcement |
-| R3 | Irrigation, lifecycle, persistence and deployment | EP-002, EP-003C–F, remaining EP-004/005/007; final cross-package qualification and applicable safety gates |
+| G0/G0.1/G0.2 | Canonical engineering governance | Documentation-only candidate; mandatory provenance, source semantics, exact-HEAD CI/enforcement, independent review and owner integration approval |
+| R1a/R1b | Critical containment and exclusive edge runtime | Deny unsupported ordinary dispatch; default strict irrigation inhibition; alternative atomic admission requires implementation and qualification within R1b; no full closure |
+| R2a/R2b | Canonical command, recovery and bounded ownership | Minimum durable recovery and command admission in R2a; bounded process/dispatch ownership in R2b; F-001 remains OPEN |
+| R3a/R3b | Irrigation, lifecycle, persistence and deployment | EP-002, EP-003C–F, remaining EP-004/005/007; full recovery and rearm contracts |
+| Q | Cross-package qualification | Profile-specific evidence; only here consider full F-001/EP-001 and EP-003C closure; no activation authority |
 | CP3 | Performance/deployment benchmarks | Reproducible workload and measured budgets |
 | CP4 | Agricultural intelligence qualification | Data provenance, temporal validation, ML promotion and fallback |
 | CP5 | Simulation/testing closeout | Risk-based coverage, contract/fault tests and CI matrix |
@@ -31,3 +32,7 @@ Simulation and regression tests accompany remediation from R1, not only CP5. Non
 Measure water and energy per yield, climate-range time, prediction errors, verified operation and intervention rate before competitive claims. Existing v3.1/v3.2/v3.x backlog features are retained as historical candidates, not committed release dates. No version allocation or delivery date is approved here.
 
 The R1–R3 sequence is a proposed checkpoint-level ordering, not permission to implement or a promise that entire packages are independent. Use the staged dependency graph in [REMEDIATION.md](docs/plans/REMEDIATION.md); full finding closure waits for all relevant enforcement, transaction, recovery and device-specific evidence.
+
+## G0.2 sequencing authority
+
+The [staged dependency matrix](docs/plans/REMEDIATION.md) is canonical over this roadmap summary. R1a denies unsupported/unqualified ordinary dispatch; R1b defaults to strict irrigation inhibition (alternative minimum atomic admission requires implementation and synthetic qualification within R1b, never lifting other gates). R2a delivers minimum durable recovery before consequential dispatch; R2b qualifies process/dispatch ownership only. F-001 and full EP-001/EP-003C closure reserved for Q after R3a/R3b and applicable evidence. D0 contract ownership is in [D0-CONTRACTS.md](docs/plans/D0-CONTRACTS.md); [qualification profiles](docs/qualification/QUALIFICATION-PROFILES.md) distinguish software integration, deployment, physical safety and activation. G0.2 documentation-only candidate; future checkpoints separately authorized.

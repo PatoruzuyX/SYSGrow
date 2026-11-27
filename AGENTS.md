@@ -1,6 +1,6 @@
 # SYSGrow engineering instructions
 
-Status: G0/G0.1 candidate; repository governance becomes effective only through explicit owner-approved integration of the qualified revision. G0/G0.1 authorize documentation only. No ADR acceptance, runtime remediation, deployment or production activation follows from integration. Record the accepted governance commit, PR, approving owner and review/CI evidence in the integration record; see [G0 review record](docs/qualification/G0-REVIEW.md).
+Status: G0/G0.1/G0.2 candidate; repository governance becomes effective only through explicit owner-approved integration of the qualified revision. G0/G0.1/G0.2 authorize documentation only. No ADR acceptance, runtime remediation, deployment or production activation follows from integration. Record the accepted governance commit, PR, approving owner and review/CI evidence in the integration record; see [G0 review record](docs/qualification/G0-REVIEW.md).
 
 ## Mandatory reading and authority
 
@@ -18,7 +18,7 @@ Status: G0/G0.1 candidate; repository governance becomes effective only through 
 5. All energizing paths must eventually enforce exclusive runtime ownership, resource authorization, deterministic safety and bounded operation; these are required target invariants, not claims of current compliance. No external AI safety override. Unknown physical outcomes are not success. See SAFE-001–015 in the foundation baseline.
 6. Preserve current safeguards. Do not activate expanded autonomous, shared-resource or external physical-control features while Critical findings remain unresolved. A successful software test does not certify hardware.
 7. Run applicable lint, format, tests and security checks; report commands, exact revision, outcomes, skips and blockers. Tests must exercise real service composition, negative paths and fault conditions where relevant. No fabricated evidence.
-8. Obtain independent review of the exact candidate HEAD, resolve review findings, verify CI and diff scope, then request separate integration approval. Missing mandatory gate evidence, unresolved defects that invalidate a checkpoint invariant, and incomplete required independent review cannot be waived as ordinary residual risk. Out-of-scope baseline risks may remain open under documented owner disposition, containment and activation restrictions. Re-review material changes. No automatic merge. Deployment and activation require separate qualification and approval.
+8. Obtain independent review of the exact candidate HEAD, resolve review findings, verify CI and diff scope, then request separate integration approval. Missing mandatory gate evidence, unresolved defects that invalidate a checkpoint invariant, and incomplete required independent review cannot be waived as ordinary residual risk. Out-of-scope baseline risks may remain open under documented owner disposition, containment and activation restrictions. Any changed HEAD, including evidence-only changes, requires fresh applicable exact-HEAD evidence and independent requalification. Record approval and post-integration closeout in the PR history, not by mutating the reviewed candidate. No automatic merge. Deployment and activation require separate qualification and approval.
 
 ## Closeout
 

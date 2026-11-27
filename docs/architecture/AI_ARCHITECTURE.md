@@ -1097,3 +1097,6 @@ pip list | grep -E "openai|anthropic|torch|transformers"
 
 **Questions?** Check the [FAQ](FAQ.md) or open an issue on GitHub.
 
+## G0.2 inherited link disposition
+
+The five inherited relative references in the historical AI architecture appendix are preserved as historical text; their original destinations do not resolve in docs/architecture. Current tracked references are [LLM setup](../ai_ml/LLM_SETUP.md), [plant health API reference](../ai_ml/PLANT_HEALTH_API_REFERENCE.md), [irrigation ML operations](../ai_ml/IRRIGATION_ML_OPERATIONS.md), [AI/ML index](../ai_ml/README.md) and [FAQ](../ai_ml/FAQ.md). These navigation corrections do not alter historical evidence or qualify the described implementation.

@@ -17,6 +17,9 @@ Status: G0 proposal; becomes canonical only after owner-approved integration. Se
 | Programme sequence | ../ROADMAP.md |
 | Historical backlog and reconciliation | ../BACKLOG.md |
 | Release history | ../CHANGELOG.md |
+| Integration approval and closeout | Applicable GitHub PR discussion/review records; see qualification/QUALIFICATION-PROFILES.md |
+| Qualification profiles and applicability | qualification/QUALIFICATION-PROFILES.md |
+| Foundational design interfaces | plans/D0-CONTRACTS.md |
 
 Historical audits remain immutable evidence of their dates; current source and pinned evidence take precedence for factual claims. Update the canonical record instead of duplicating decision ownership. Use [INDEX.md](INDEX.md) for navigation.
 
@@ -36,7 +39,7 @@ Safety changes additionally require contract, concurrency, negative and fault-in
 
 ## Integration and rollback
 
-Submit a bounded PR; include evidence, scope, limitations, finding mappings, rollback/recovery steps and explicit unresolved risks. Independent reviewers must assess the exact HEAD, not the author's self-check. Any Critical/High candidate review defect blocks integration until corrected and re-reviewed; a mandatory checkpoint invariant, required evidence or independent review cannot be waived by ordinary risk acceptance. Existing out-of-scope baseline findings may remain OPEN with documented owner, containment, follow-up and residual-risk disposition, never as qualified safety or permission to activate. Record exact approved HEAD, baseline, review identifiers, CI run/job evidence, owner approval and resulting integration revision; accepting governance does not accept candidate ADRs. Require applicable successful CI and owner approval; repository enforcement is not established by G0 (F-012). Never bypass checks or auto-merge. If a candidate fails, keep it unmerged; revert only authorized changes using reviewed procedures. For persistence/hardware changes, qualify backup, restoration and safe recovery separately. No merge implies deployment or activation permission.
+Submit a bounded PR; include evidence, scope, limitations, finding mappings, rollback/recovery steps and explicit unresolved risks. Independent reviewers must assess the exact HEAD, not the author's self-check. Any Critical/High candidate review defect blocks integration until corrected and re-reviewed; a mandatory checkpoint invariant, required evidence or independent review cannot be waived by ordinary risk acceptance. Existing out-of-scope baseline findings may remain OPEN with documented owner, containment, follow-up and residual-risk disposition, never as qualified safety or permission to activate. Record exact approved HEAD, baseline, review identifiers, CI run/job evidence, owner approval and resulting integration revision; accepting governance does not accept candidate ADRs. Require applicable successful exact-HEAD CI, effective check-enforcement evidence and owner approval; repository enforcement is not established by G0 (F-012). Never bypass checks or auto-merge. If a candidate fails, keep it unmerged; revert only authorized changes using reviewed procedures. For persistence/hardware changes, qualify backup, restoration and safe recovery separately. No merge implies deployment or activation permission.
 
 ## Evidence states
 
@@ -45,3 +48,7 @@ Verified = directly observed source/metadata; Risk = credible scenario, impact n
 ## Authority and staged qualification
 
 Use the applicable accepted ADR and approved bounded ExecPlan together; neither a tool profile nor an implementation example grants permission. If an accepted decision conflicts with the scope or safety policy, stop. Separate design acceptance (context, alternatives, risks, contract and proposed validation), implementation authorization, synthetic implementation qualification, integration approval, deployment approval and device-specific activation approval. Each is a distinct record. Proposed validation may support a design decision without claiming the resulting implementation is qualified. No approval substitutes for missing mandatory evidence. See [ADR register](architecture/adr/README.md), [remediation dependencies](plans/REMEDIATION.md) and [G0 review record](qualification/G0-REVIEW.md).
+
+## G0.2 integration records and qualification profiles
+
+The canonical pre-integration and post-integration records live in the applicable GitHub PR discussion/review history (immutable revision-linked references; edits require explicit superseding record, not silent replacement). See [qualification profiles](qualification/QUALIFICATION-PROFILES.md) for fields, applicability and evidence. No commit, even evidence-only, inherits exact-HEAD CI or review approval. Record pre-integration evidence outside the candidate tree; obtain independent final exact-HEAD reviews and owner approval before merge. Record resulting integration SHA after authorized integration without modifying the qualified candidate. A follow-up repository documentation change needs its own authorization/qualification. G0 documentation qualification never qualifies runtime, deployment or activation.
