@@ -79,3 +79,8 @@ For new users, only the docs in the "Start Here" section are required.
 
 - [G0.3 correction record](qualification/G0.3-REVIEW.md), [archive manifest](qualification/reviews/PROVENANCE.md), [separate evidence/enforcement workstreams](qualification/EVIDENCE-WORKSTREAMS.md)
 - [G0.2 Reviewer 1](qualification/reviews/G0.2-reviewer-1.md), [Reviewer 2](qualification/reviews/G0.2-reviewer-2.md), [Reviewer 3](qualification/reviews/G0.2-reviewer-3.md) — all HOLD at superseded G0.2 HEAD.
+
+## Evidence rebaseline (proposed; HOLD)
+
+- [Replacement technical qualification candidate](qualification/EVIDENCE-REBASELINE-001.md), [ER-01–05 recovery crosswalk](qualification/EVIDENCE-RECOVERY-CROSSWALK.md), [proposed evidence governance amendment](qualification/EVIDENCE-GOVERNANCE-AMENDMENT.md), [independent review assignments](qualification/EVIDENCE-REBASELINE-REVIEW.md).
+- Historical records remain unchanged. Replacement basis not accepted; all 44 findings OPEN, production safety NOT QUALIFIED. No integration authorization.
