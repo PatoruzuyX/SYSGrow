@@ -89,3 +89,7 @@ For new users, only the docs in the "Start Here" section are required.
 
 - [R1 correction record](qualification/EVIDENCE-REBASELINE-R1-REVIEW.md), [replacement matrix](qualification/EVIDENCE-REBASELINE-001.md), [primary structural evidence](qualification/EVIDENCE-RECOVERY-CROSSWALK.md), [proposed EGA-001 lifecycle](qualification/EVIDENCE-GOVERNANCE-AMENDMENT.md), [review assignments](qualification/EVIDENCE-REBASELINE-REVIEW.md).
 - [Reviewer 1](qualification/reviews/EVIDENCE-REBASELINE-reviewer-1.md), [Reviewer 2](qualification/reviews/EVIDENCE-REBASELINE-reviewer-2.md), [Reviewer 3](qualification/reviews/EVIDENCE-REBASELINE-reviewer-3.md), [manifest](qualification/reviews/PROVENANCE.md). Original HOLDs at superseded initial rebaseline HEAD.
+
+## Evidence rebaseline R2 (candidate; HOLD)
+
+[R2 correction record](qualification/EVIDENCE-REBASELINE-R2-REVIEW.md) · [replacement matrix](qualification/EVIDENCE-REBASELINE-001.md) · [R2 review assignments](qualification/EVIDENCE-REBASELINE-REVIEW.md) · [R1 architecture review](qualification/reviews/EVIDENCE-REBASELINE-R1-reviewer-1.md) · [R1 safety review](qualification/reviews/EVIDENCE-REBASELINE-R1-reviewer-2.md) · [R1 evidence/ML review](qualification/reviews/EVIDENCE-REBASELINE-R1-reviewer-3.md) · [provenance](qualification/reviews/PROVENANCE.md).

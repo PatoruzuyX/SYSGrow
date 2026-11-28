@@ -68,3 +68,7 @@ G0.2 Reviewer 3 independently verified 72 source reference occurrences, 43 uniqu
 ## R1 replacement evidence candidate — historical core fields preserved
 
 The [replacement technical matrix](EVIDENCE-REBASELINE-001.md) and [R1 correction record](EVIDENCE-REBASELINE-R1-REVIEW.md) refine source descriptions (including F-034 registered attribute mismatch versus separate fallback, F-003/044 static composition, F-043 queued destination and local admission/outcomes, F-007/008/032 ML, F-025 shutdown). Read those corrections for the proposed replacement technical basis rather than relying on older observation wording above. Original fields and historical evidence retained; no silent reclassification or closure. Replacement remains PROPOSED and unqualified until independent final-HEAD review and explicit EGA-001 limited acceptance. The existing 44 finding IDs, four Critical and OPEN statuses remain unchanged.
+
+## R2 replacement evidence refinement — unchanged core register
+
+See [R2 correction record](EVIDENCE-REBASELINE-R2-REVIEW.md) and [replacement matrix](EVIDENCE-REBASELINE-001.md) for additional F-003 calibration completion, F-041 exact transition/learning, F-043/F-044 queue and response semantics, F-007 implicit active registration and metrics/retraining, F-008 immutable bundle trust and F-032 durable outcome dependencies. The R2 observations supplement earlier bounded descriptions; original register core fields, owners and all 44 OPEN statuses are preserved. No independent R2 acceptance implied.

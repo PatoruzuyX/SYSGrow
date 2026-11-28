@@ -23,3 +23,15 @@ Read [R1 correction record](EVIDENCE-REBASELINE-R1-REVIEW.md), replacement matri
 | R3 Evidence/integration/ML | REB-02/05/07/08/10/13/14 and all 44 rows/all anchors; ER-01/02 tree counts, ancestry and inventory, ER-03 leakage, ER-04 bounded claims vs external HOLD, ER-05 effective enforcement, all ten archive blobs and attachment fidelity, original historical limitation, all 20 observations traceable, all core fields and Markdown scope |
 
 No reviewer may accept EGA-001 on owner's behalf, close runtime findings, dispatch CI, alter repository, deploy, operate hardware or merge. Distinguish bounded replacement source evidence from unavailable future runtime/device evidence, mandatory pre-G0 CI/enforcement and explicit acceptance. No final qualification inherited from earlier reports.
+
+## R2 independent exact-candidate assignments (not executed)
+
+Use final R2 HEAD/tree provided in PR record, not superseded R1 `47794834e009334aa417b913fcc6818407ad234e`. Read AGENTS.md, guidelines, SECURITY.md, R2 correction record, replacement matrix, proposed EGA-001, remediation including CP4 R2 designs, relevant R1 archived review and applicable prior qualified invariants. Read-only; independent PASS/HOLD/FAIL, severity, pinned evidence, counterexamples, required corrections and limitations.
+
+| Reviewer | Assigned challenge |
+|---|---|
+| Architecture/governance | R2-07 historical method scope, unchanged EGA state/authority, D0–Q/CP3–CP7, all 12 proposed ADRs; R2-02/03/04/05/06 ownership and contract dependencies; bounded regression of previously qualified requirements |
+| Security/physical safety | R2-01/02/03, R2-05/06 trust and physical-admission separation; original R1-SS-01–03, all four Critical justifications, typed queue/correlation, calibration bounds and durable shutdown, exact transition commit and zero learning on rejection; applicable FT extensions and preserved independent protection |
+| Evidence/integration/ML | R2-04/05/06 and R2-07, original ER-R3-R1-001–003, all twelve CP4 cases, changed source anchors and 44-row core continuity, R2-01–03 evidence cross-check, archive checksums and duplicate exclusion, exact tree/diff/links and CI/enforcement status; F-032 durability and bounded regression |
+
+Focus on material contradictions affecting the replacement basis or mandatory gates; record implementation-only observations under existing work packages without implying closure or suppressing material defects. No submitted reviews, mutations, test execution, CI dispatch, model operation, settings changes, deployment, firmware/HIL/physical operations, EGA-001 acceptance or merge. Prior PASS is historical evidence, not inherited exact-HEAD approval. All three new reports and remaining mandatory gates required; final reports preserved outside candidate tree.

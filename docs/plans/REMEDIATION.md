@@ -203,3 +203,34 @@ EP-006 original-report prerequisite stays binding until valid limited candidate-
 | FT-024/027/036 | Privileged maintenance principal/action/target, trusted artifact, exact destination identity preserved, offline queue known vs sent, expiration/revocation and stale effects, missing acknowledgement unknown, interrupted update durable inhibition, unexpected identity or failed rearm blocks ordinary activation. |
  
 FT-024 downstream cases require separately authorized applicable bridge/device source and qualification plan; no firmware test here. All 45 unique FT designs retained, none executed. Existing acceptance oracles are cumulative, not replaced by this extension. CP4 additional synthetic ML validation must distinguish readiness, enablement, selection, eligibility, promotion, artifact trust and durable restart; no-evidence abstention, invalid auxiliary artifact rejection, failed persistence and concurrent writer tests. No model or runtime execution. No new fault ID or architecture required.
+
+## R2 bounded additional fault-design oracles (not executed)
+
+These requirements extend the existing FT designs, not replace their original oracles. Use actual isolated service composition, synthetic fixtures, controlled clocks, deterministic barriers, isolated persistence and lowest-interface positive controls. No runtime, ML or physical execution under this checkpoint.
+
+| Existing FT identifiers | Required additional synthetic scenario and oracle |
+|---|---|
+| FT-008/024/027/029/032 | Queue at capacity (including zero/invalid capacity policy): explicit admission or rejection; every admitted ID accounted for including eviction/expiry, no silent disappearance. Preserve exact destination across queue/replay and current authority. Known replay publication failure or compatible-client non-success result never recorded as sent; explicit terminal failure or safely retained reconcilable operation. Ambiguous delivery preserves durable uncertainty/quarantine, no blind consequential retry. Mismatched, stale, duplicate or unrelated operation/target/transaction response cannot establish completion or physical verification; validate before status/callback. Positive control detects actual attempted publication; actual compatible and incompatible wrapper composition distinguished. |
+| FT-005/006/020/022 | Failed/rejected start cannot create successful session; independently enforced device-specific authorized operating bound, synthetic clock reaches limit and qualified stop mechanism invoked; verify actual finite bounded measured volume and independently established elapsed runtime (not requested duration). On missing/failed/unknown shutdown, cancellation, restart or persistence False/exception/uncertain commit, retain operation identity and unresolved state, no durable calibration success or eligibility; successful control requires verified shutdown and exactly intended durable data. EP-003E, EP-003F and EP-004. |
+| FT-004/020/030 | Missing row, wrong expected state/version, zero or unexpected affected rows, False, commit failure or ambiguity: reject/conflict or hold for reconciliation, no successful approval/delay/cancel, no associated preference-learning/ML-collected effects or unauthorized physical effect. Positive control exactly one intended committed transition; learning causally linked to committed operation and idempotent. Preserve prior timing, authorization and stale-work oracles. |
+
+### CP4 negative lifecycle and bundle-coherence qualification design
+
+The owner authorization referred to eleven cases; the R1 Reviewer 3 table actually contains twelve rows. All twelve are retained below; no new FT identifiers. These are design requirements, not results. CP4 owns lifecycle/statistical eligibility, EP-004 supplies durable registry/persistence, CP6 consumes qualified artifact trust where applicable, EP-003A and EP-007 enforce physical admission independently. Use synthetic inert artifacts and instrumentation; no untrusted artifact deserialization.
+
+| Case | Mandatory measurable oracle |
+|---|---|
+| Training saves dictionary metadata without status | Candidate persisted non-production; no active entry/production selection or implicit promotion; exercise actual trainer callers and all supported registry representations |
+| Registry contains only inactive versions | No eligible production version returned; no inference from inactive fallback; explicit abstention |
+| Invalid or null error metric | Present malformed/null and absent required keys distinguished; eligibility denied for invalid required evidence, no default zero; alternate criteria use only valid explicitly permitted evidence |
+| Non-finite or impossible metric | Reject NaN, +/-infinity and metric-specific out-of-domain values before favorable predicate; valid negative R² not mislabeled impossible |
+| No prediction history or ground truth | Evidence unavailable, not perfect performance; no promotion/eligibility based on favorable defaults |
+| Trainer returns unsuccessful result | No COMPLETED/job-success/training-complete broadcast for failure/cancellation; prior production version not new candidate identity |
+| Registry persistence fails | No successful durable registration/promotion, no false successful retraining; retain/reconcile prior valid state and uncertainty after restart |
+| Production version changes during loading | One immutable manifest-bound model/required auxiliaries/metadata/schema version or safe rejection; deterministic barrier during actual composed bundle load |
+| Invalid scaler or encoder | Instrument deserializer; zero calls for invalid/substituted/missing required artifact, positive control proves instrumentation; verify integrity and containment before loading |
+| Trust or eligibility revoked after caching | Recheck current scoped trust and eligibility on subsequent use, no unauthorized inference, invalidate stale cached bundle; qualified re-admission only |
+| Different model and metadata versions | Reject mismatch before use, no borrowed metrics; bind every required component and verification to the immutable version |
+| Eligibility passes but control policy denies action | Actual composed lowest-interface instrumentation shows zero unauthorized consequential physical effects; advisory inference cannot grant physical authority |
+
+Required positive controls must establish valid trusted coherent eligible candidate handling and separately authorized deterministic admission in synthetic composition, not production operation. Preserve existing metric thresholds/no-fallback safeguards pending qualified change. All 45 FT designs retained, zero executed; CP4/CP6 downstream evidence and ER-04 remain separate.

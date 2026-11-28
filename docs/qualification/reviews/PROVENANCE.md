@@ -27,3 +27,15 @@ Reviewed candidate `a10107a4f78eea8c37a0b1a6ab7d616a61b4df87`, tree `6afe5fa9a18
 | R3 Evidence/integration/ML | Pasted text (3)(4).txt | [reviewer 3](EVIDENCE-REBASELINE-reviewer-3.md) | 61751 | 1358 | 809cfedd98a1b95f6ffa671f290bbee24ac1b15b6458ff315dd84c3e6ded6918 |
 
 Final archive Git blob readback equality and candidate tree identity must be verified before branch update and recorded in PR evidence. No original report provenance claim.
+
+## R2 archive of R1 independent reviewer submissions
+
+Reviewed candidate `47794834e009334aa417b913fcc6818407ad234e`, tree `1f29e1d88a612712d957914d0f37c0e8af0b3e97`, application baseline `2ab6bfa764c8ad587a027bd3b5155b53b7e5ae21`. SHA-256 computed on mounted supplied attachment bytes; complete contiguous extracted text encoded UTF-8 matches those checksums. Archive text is unedited. Original external conversation-export fidelity and independent session authentication not established. No original CP0–CP2 report recovered.
+
+| Review | Supplied attachment | Archive | Verdict | Bytes | Lines | Attachment SHA-256 |
+|---|---|---|---|---:|---:|---|
+| Architecture/governance | Pasted text (3)(5).txt | [R1 reviewer 1](EVIDENCE-REBASELINE-R1-reviewer-1.md) | PASS assigned scope; integration HOLD | 60337 | 1055 | cc0858f30c3028210cc9f1e33dc0cf354d5f420f8ed94177f906dd1d3724aaca |
+| Security/physical safety | Pasted text (2)(6).txt | [R1 reviewer 2](EVIDENCE-REBASELINE-R1-reviewer-2.md) | HOLD | 68861 | 1117 | e669fb18ef8f788867ca48d1c319420068da21e1725f441f08d58d33a29b45a0 |
+| Evidence/integration/ML | Pasted text (4)(1).txt | [R1 reviewer 3](EVIDENCE-REBASELINE-R1-reviewer-3.md) | HOLD | 74711 | 1282 | a2fbf37d24bd2eb3783c0e06d5bb3b88f8dddb1647a47aa6ed4fa81e2db412dd |
+
+Excluded duplicate Pasted text(8).txt, SHA-256 809cfedd98a1b95f6ffa671f290bbee24ac1b15b6458ff315dd84c3e6ded6918, matches existing [initial rebaseline reviewer 3](EVIDENCE-REBASELINE-reviewer-3.md); no duplicate archive. Preserve all ten prior archives unchanged. Git blob readback verification and final candidate identity belong in PR evidence outside candidate tree.
