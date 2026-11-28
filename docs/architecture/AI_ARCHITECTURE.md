@@ -1,5 +1,8 @@
 # AI Services Architecture
 
+> **G0 reconciliation (2026-11-27):** Existing AI architecture is retained. Model readiness, forecasting validity, artifact trust and registry integrity remain unqualified (F-006–008, F-032). See [foundation baseline](FOUNDATION_BASELINE.md) and [CP4 plan](../plans/SYSGROW-FOUNDATION-001.md). Described examples and performance figures are not fresh measurements or production eligibility evidence. AI remains advisory until separately qualified.
+
+
 **Deep dive into SYSGrow's machine learning and AI systems**
 
 ---
@@ -1093,3 +1096,7 @@ pip list | grep -E "openai|anthropic|torch|transformers"
 ---
 
 **Questions?** Check the [FAQ](FAQ.md) or open an issue on GitHub.
+
+## G0.2 inherited link disposition
+
+The five inherited relative references in the historical AI architecture appendix are preserved as historical text; their original destinations do not resolve in docs/architecture. Current tracked references are [LLM setup](../ai_ml/LLM_SETUP.md), [plant health API reference](../ai_ml/PLANT_HEALTH_API_REFERENCE.md), [irrigation ML operations](../ai_ml/IRRIGATION_ML_OPERATIONS.md), [AI/ML index](../ai_ml/README.md) and [FAQ](../ai_ml/FAQ.md). These navigation corrections do not alter historical evidence or qualify the described implementation.

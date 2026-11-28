@@ -1,0 +1,37 @@
+# SYSGROW-EVIDENCE-REBASELINE-001 — independent qualification assignments
+
+Status: proposed, not executed. Application baseline `2ab6bfa764c8ad587a027bd3b5155b53b7e5ae21`; parent governance `5d646ba58cb071b392cea94287371925ba82e626`. Exact candidate HEAD must be supplied from verified PR #3 metadata after commit in the handoff/PR record (not self-referenced in this tree). Three distinct independent reviewers; no author self-review. Read-only pinned GitHub qualification; no modifications, submitted reviews, CI dispatch, settings, deployment, live data, hardware or merge. Read AGENTS.md, guidelines, SECURITY, CP0–CP2, starting and replacement register, crosswalk, amendment, workstreams, profiles, G0.3 and applicable archived reviews.
+
+| Reviewer | Primary assignment | Independent challenge |
+|---|---|---|
+| R1 Architecture/governance | F-001/009/010/011/014/015/020/021/022/023/024/025/028/029/030/031/032; EGA-001 | Reproduce source semantics, lifecycle/ownership, persistence and reproducibility evidence; verify all owner mappings and test criteria preserve D0/R/Q and CP profiles. Challenge scope of amendment and preservation rules; no silent precedence or ADR acceptance. |
+| R2 Security/physical safety | F-001/002/003/004/005/016/026/027/033/034/035/036/037/038/039/040/041/042/043/044; ER-04 | Trace actual service composition, authority/approval, all consequential effects, typed results, lock/recovery, firmware trust and actual limits. Challenge four Critical severities, containment, negative/fault oracles and conditional reachability; no physical claim from code. |
+| R3 Evidence/integration/ML | F-006/007/008/012/013/017/018/019/020/021/032/043; ER-01–05, all 44 rows and all anchors | Independently verify exact parent/base/candidate, all IDs/status/class/severity/owners and archive blob preservation; reproduce semantic evidence and anchor bounds, test/tree inventory, branch identities, ML leakage, downstream trust, current CI and enforcement evidence. Challenge raw recovery provenance and 22/32 discrepancy; no inferred admin policy. |
+
+All reviewers cross-check permanent provenance limitation, replacement qualification vs historical recovery, 44 OPEN and four Critical, no runtime/ADR/CI/settings changes, proposed acceptance separate from integration, and the future preservation policy. R3 must inspect all anchors, not merely HTTP existence/bounds; if inaccessible mark HOLD. R1/R2 challenge relevant claim alternatives and identify counterexamples to source/operational inference. Reviewers independently assess severity (candidate defects separately from baseline findings), classification, completeness and minimum acceptance evidence. Record PASS/HOLD/FAIL by row and amendment clause, exact pinned path/range or metadata, direct vs inferred evidence, limitations, counterexamples, mandatory corrections, and separately documentation/replacement sufficiency, CI/enforcement gates, production safety. A documentary PASS cannot close a runtime finding or confer authority. No reviewer may treat prior reviews as current exact-HEAD evidence.
+
+Acceptance: all mandatory replacement technical evidence and independent review resolved, owner explicitly accepts EGA-001 for exact candidate, then all other G0 gates including applicable successful exact-HEAD CI, effective enforcement and separate owner integration approval. Any new commit requires applicable fresh CI and all three final independent reports. Preserve adverse verdicts. Production safety NOT QUALIFIED.
+
+## R1 final independent assignments (not executed)
+
+Read [R1 correction record](EVIDENCE-REBASELINE-R1-REVIEW.md), replacement matrix, amended EGA-001, updated crosswalk and remediation FT extensions, applicable archived initial rebaseline review and controlling docs. Exact resulting candidate SHA/tree and base supplied outside tree in PR handoff; do not use superseded `a10107a4f78eea8c37a0b1a6ab7d616a61b4df87` as final candidate. Read-only; return independent PASS/HOLD/FAIL with severity, pinned source observations, conditional impacts, counterexamples and required corrections.
+
+| Reviewer | Challenge R1 |
+|---|---|
+| R1 Architecture/governance | REB-01/02/03/09/10/11/14; EGA state/precedence exact supersession and retention, primary tree, F-025/032 shutdown/registration/promotion, F-009 actual injection, F-014 two-sided crosswalk, EP-005/CP3, unchanged D0–Q and 12 proposed ADRs |
+| R2 Security/physical safety | REB-04/05/06/12/13, four Critical, registered attribute mismatch vs separate fallback, actual MQTT and calibration composition and conditional overrides, firmware status/queue/destination/privileged maintenance and downstream evidence boundary; challenge updated FT oracles, no physical operations |
+| R3 Evidence/integration/ML | REB-02/05/07/08/10/13/14 and all 44 rows/all anchors; ER-01/02 tree counts, ancestry and inventory, ER-03 leakage, ER-04 bounded claims vs external HOLD, ER-05 effective enforcement, all ten archive blobs and attachment fidelity, original historical limitation, all 20 observations traceable, all core fields and Markdown scope |
+
+No reviewer may accept EGA-001 on owner's behalf, close runtime findings, dispatch CI, alter repository, deploy, operate hardware or merge. Distinguish bounded replacement source evidence from unavailable future runtime/device evidence, mandatory pre-G0 CI/enforcement and explicit acceptance. No final qualification inherited from earlier reports.
+
+## R2 independent exact-candidate assignments (not executed)
+
+Use final R2 HEAD/tree provided in PR record, not superseded R1 `47794834e009334aa417b913fcc6818407ad234e`. Read AGENTS.md, guidelines, SECURITY.md, R2 correction record, replacement matrix, proposed EGA-001, remediation including CP4 R2 designs, relevant R1 archived review and applicable prior qualified invariants. Read-only; independent PASS/HOLD/FAIL, severity, pinned evidence, counterexamples, required corrections and limitations.
+
+| Reviewer | Assigned challenge |
+|---|---|
+| Architecture/governance | R2-07 historical method scope, unchanged EGA state/authority, D0–Q/CP3–CP7, all 12 proposed ADRs; R2-02/03/04/05/06 ownership and contract dependencies; bounded regression of previously qualified requirements |
+| Security/physical safety | R2-01/02/03, R2-05/06 trust and physical-admission separation; original R1-SS-01–03, all four Critical justifications, typed queue/correlation, calibration bounds and durable shutdown, exact transition commit and zero learning on rejection; applicable FT extensions and preserved independent protection |
+| Evidence/integration/ML | R2-04/05/06 and R2-07, original ER-R3-R1-001–003, all twelve CP4 cases, changed source anchors and 44-row core continuity, R2-01–03 evidence cross-check, archive checksums and duplicate exclusion, exact tree/diff/links and CI/enforcement status; F-032 durability and bounded regression |
+
+Focus on material contradictions affecting the replacement basis or mandatory gates; record implementation-only observations under existing work packages without implying closure or suppressing material defects. No submitted reviews, mutations, test execution, CI dispatch, model operation, settings changes, deployment, firmware/HIL/physical operations, EGA-001 acceptance or merge. Prior PASS is historical evidence, not inherited exact-HEAD approval. All three new reports and remaining mandatory gates required; final reports preserved outside candidate tree.

@@ -1,5 +1,16 @@
 # SYSGrow Documentation Index
 
+## Engineering governance (G0 candidate)
+
+- [Agent instructions](../AGENTS.md), [engineering guidelines](guidelines.md), [security policy](../SECURITY.md)
+- [Roadmap](../ROADMAP.md), [backlog](../BACKLOG.md)
+- [Current foundation architecture and target invariants](architecture/FOUNDATION_BASELINE.md), [candidate ADR register](architecture/adr/README.md)
+- [CP0–CP2 qualification](qualification/CP0-CP2.md), [44 open findings](qualification/FINDINGS.md), [G0/G0.1 review record](qualification/G0-REVIEW.md)
+- [Foundation ExecPlan](plans/SYSGROW-FOUNDATION-001.md), [bounded remediation ExecPlans](plans/REMEDIATION.md)
+
+Historical setup/architecture material below is retained; production safety is not qualified. Governance proposals become effective only on owner-approved integration; implementation and activation require separate authorization.
+
+
 This index is organized for practical setup first, then reference material.
 
 ## Start Here
@@ -57,3 +68,28 @@ If you are installing SYSGrow on Raspberry Pi, follow this order:
 Some documents in this repository are engineering notes, feature audits, or implementation records from earlier phases. Keep them for internal traceability, but they are not required for first-time installation.
 
 For new users, only the docs in the "Start Here" section are required.
+
+## G0.2 review and qualification records
+
+- [G0 review record](qualification/G0-REVIEW.md), [G0.2 correction record](qualification/G0.2-REVIEW.md)
+- [D0 contract matrix](plans/D0-CONTRACTS.md), [qualification profiles](qualification/QUALIFICATION-PROFILES.md)
+- [Reviewer 1](qualification/reviews/G0.1-reviewer-1.md), [Reviewer 2](qualification/reviews/G0.1-reviewer-2.md), [Reviewer 3](qualification/reviews/G0.1-reviewer-3.md) — archived submitted text, reviewed G0.1 HEAD only.
+
+## G0.3 review and follow-up
+
+- [G0.3 correction record](qualification/G0.3-REVIEW.md), [archive manifest](qualification/reviews/PROVENANCE.md), [separate evidence/enforcement workstreams](qualification/EVIDENCE-WORKSTREAMS.md)
+- [G0.2 Reviewer 1](qualification/reviews/G0.2-reviewer-1.md), [Reviewer 2](qualification/reviews/G0.2-reviewer-2.md), [Reviewer 3](qualification/reviews/G0.2-reviewer-3.md) — all HOLD at superseded G0.2 HEAD.
+
+## Evidence rebaseline (proposed; HOLD)
+
+- [Replacement technical qualification candidate](qualification/EVIDENCE-REBASELINE-001.md), [ER-01–05 recovery crosswalk](qualification/EVIDENCE-RECOVERY-CROSSWALK.md), [proposed evidence governance amendment](qualification/EVIDENCE-GOVERNANCE-AMENDMENT.md), [independent review assignments](qualification/EVIDENCE-REBASELINE-REVIEW.md).
+- Historical records remain unchanged. Replacement basis not accepted; all 44 findings OPEN, production safety NOT QUALIFIED. No integration authorization.
+
+## Evidence rebaseline R1 (proposed; HOLD)
+
+- [R1 correction record](qualification/EVIDENCE-REBASELINE-R1-REVIEW.md), [replacement matrix](qualification/EVIDENCE-REBASELINE-001.md), [primary structural evidence](qualification/EVIDENCE-RECOVERY-CROSSWALK.md), [proposed EGA-001 lifecycle](qualification/EVIDENCE-GOVERNANCE-AMENDMENT.md), [review assignments](qualification/EVIDENCE-REBASELINE-REVIEW.md).
+- [Reviewer 1](qualification/reviews/EVIDENCE-REBASELINE-reviewer-1.md), [Reviewer 2](qualification/reviews/EVIDENCE-REBASELINE-reviewer-2.md), [Reviewer 3](qualification/reviews/EVIDENCE-REBASELINE-reviewer-3.md), [manifest](qualification/reviews/PROVENANCE.md). Original HOLDs at superseded initial rebaseline HEAD.
+
+## Evidence rebaseline R2 (candidate; HOLD)
+
+[R2 correction record](qualification/EVIDENCE-REBASELINE-R2-REVIEW.md) · [replacement matrix](qualification/EVIDENCE-REBASELINE-001.md) · [R2 review assignments](qualification/EVIDENCE-REBASELINE-REVIEW.md) · [R1 architecture review](qualification/reviews/EVIDENCE-REBASELINE-R1-reviewer-1.md) · [R1 safety review](qualification/reviews/EVIDENCE-REBASELINE-R1-reviewer-2.md) · [R1 evidence/ML review](qualification/reviews/EVIDENCE-REBASELINE-R1-reviewer-3.md) · [provenance](qualification/reviews/PROVENANCE.md).

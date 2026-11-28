@@ -1,5 +1,26 @@
 # SYSGrow — Backlog
 
+## G0 reconciliation — 27 November 2026
+
+The February 2026 entries below are preserved verbatim as historical backlog, not a current execution queue. Current priority and authorization are in [ROADMAP.md](ROADMAP.md), [FINDINGS.md](docs/qualification/FINDINGS.md), and [remediation plans](docs/plans/REMEDIATION.md). All 44 foundation findings remain open. No remediation authorized here.
+
+| Historical IDs | Current disposition |
+|---|---|
+| S-1 | Central write auth implemented; resource/read/room enforcement still open (F-005/036–038) |
+| S-2/S-3/S-4 | Parameterized operations and safe errors present; comprehensive SQL/error and historical Bandit disposition unqualified (F-018) |
+| I-1 | CI implemented and passed on baseline; mandatory enforcement unqualified (F-012/013) |
+| I-2 | Repository protocols and façades exist; preserve; no drop-in PostgreSQL claim |
+| I-3 | Hardware-aware WAL/cache settings exist; benchmark and transaction/recovery qualification (F-015/029/030) |
+| I-4 | Compression implemented; benchmark rather than reimplement |
+| I-5 | Lock exists; constraints and CI reproducibility unresolved (F-010/013) |
+| T-1/T-2/T-3/T-4 | Existing test modules, irrigation and ML gate tests; fresh coverage/composition/simulation/property tests remain qualification work, no assumed completion |
+| F-1/F-2 | Vision/camera candidates; qualify after CP4, no new feature authorization |
+| F-3 | Existing unit locks/valves; physical cross-unit resource ownership open (F-016/027/040) |
+| F-4/F-5/F-6/F-7 | Preserve existing analytics/advisor work; reconcile implementation before future feature planning |
+| D-1/D-2/D-3/D-4 | Retain as historical candidates; verify current paths and tests before reopening |
+
+
+
 > Living document. Items are grouped by track and roughly ordered by priority within each group.
 > Current version: **v3.0.0** · Date: February 2026
 
@@ -84,3 +105,4 @@
 | M | 1–3 days |
 | L | 3–7 days |
 | XL | 1–3 weeks |
+

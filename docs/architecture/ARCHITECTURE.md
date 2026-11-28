@@ -1,5 +1,8 @@
 # New Growth Unit Architecture
 
+> **G0 baseline notice (2026-11-27):** This historical design is preserved. For the source-qualified current principal boundaries and proposed target, see [FOUNDATION_BASELINE.md](FOUNDATION_BASELINE.md). References to UnitRuntimeManager and older paths do not establish current ownership. No production safety qualification is implied.
+
+
 ## Overview
 
 The growth unit management system has been refactored into a clean, layered architecture with clear separation of concerns.
@@ -397,3 +400,4 @@ UnitRuntime subscribes to events:
 **Author**: Senior Engineering Team  
 **Date**: November 2025  
 **Status**: Phase 1 Complete - Ready for Testing
+

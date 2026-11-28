@@ -1,13 +1,16 @@
 <!-- Auto-generated guidance for AI coding agents working on SYSGrow -->
 # GitHub Copilot Instructions — SYSGrow backend
 
+> **G0 reconciliation:** [AGENTS.md](../AGENTS.md) and [engineering guidelines](../docs/guidelines.md) are the proposed canonical repository instructions; effective upon owner-approved integration. This tool-specific guidance is retained for context. Verify historical paths/commands against the pinned source before use. Do not start a live runtime, run hardware, modify deployment or merge without explicit authorization; see [foundation findings](../docs/qualification/FINDINGS.md).
+
+
 Purpose: short, actionable guidance so an AI code assistant is immediately productive in this repository.
 
 - **Big picture:** The backend is a modular Flask application. Key layers:
-  - **Web / API layer:** [app/blueprints](app/blueprints) + Flask routes. Use `run_server.py` / `smart_agriculture_app.py` to run.
-  - **Service layer:** [app/services](app/services) contains business logic (e.g., `GrowthService`, `DeviceService`, `MLService`). Prefer modifying/adding services here rather than placing business logic in controllers.
-  - **Domain & models:** [app/models](app/models) and [app/schemas](app/schemas) define persistent state and API payloads.
-  - **Infrastructure:** database and device integrations live under [infrastructure](infrastructure) and [app/extensions.py] (shared singletons).
+  - **Web / API layer:** [app/blueprints](../app/blueprints) + Flask routes. Use `run_server.py` / `smart_agriculture_app.py` to run.
+  - **Service layer:** [app/services](../app/services) contains business logic (e.g., `GrowthService`, `DeviceService`, `MLService`). Prefer modifying/adding services here rather than placing business logic in controllers.
+  - **Domain & models:** Current domain entities are under [app/domain](../app/domain), schemas under [app/schemas](../app/schemas); the former app/models reference is historical.
+  - **Infrastructure:** database and device integrations live under [infrastructure](../infrastructure) and [app/extensions.py] (shared singletons).
 
 - **Run / dev workflows (exact commands):**
   - Create venv and activate (Windows):
@@ -52,11 +55,11 @@ Purpose: short, actionable guidance so an AI code assistant is immediately produ
   - `docs/INDEX.md` and `docs/architecture/ARCHITECTURE.md` for design rationale
 
 - **Files to inspect first when onboarding:**
-  - [README.md](README.md) for setup and high-level architecture
-  - [app/extensions.py](app/extensions.py) for shared singletons
-  - [app/config.py](app/config.py) and [ops.env.example](ops.env.example) for runtime configuration
-  - [app/services](app/services) to learn where business logic lives
-  - [docs/INDEX.md](docs/INDEX.md) and [docs/architecture/ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md) for design rationale
+  - [README.md](../README.md) for setup and high-level architecture
+  - [app/extensions.py](../app/extensions.py) for shared singletons
+  - [app/config.py](../app/config.py) and [ops.env.example](../ops.env.example) for runtime configuration
+  - [app/services](../app/services) to learn where business logic lives
+  - [docs/INDEX.md](../docs/INDEX.md) and [docs/architecture/ARCHITECTURE.md](../docs/architecture/ARCHITECTURE.md) for design rationale
 
 - **Update documentation as you go**
 Especially for new features or architectural changes. The `docs/` folder contains design docs, architecture decisions, and sprint reports that should be updated to reflect any significant changes.
@@ -67,3 +70,11 @@ Especially for new features or architectural changes. The `docs/` folder contain
   - CI/deploy scripts (`Dockerfile`, `docker-compose.yml`, `deployment/`) and systemd service files.
 
 If any of these links point to missing files or you want more depth in a particular area (tests, ML pipeline, infra), tell me which area to expand and I will iterate.
+
+## G0.1 authority clarification
+
+All historical commands, setup workflows and code examples above are informational unless separately authorized and qualified against the pinned source. Database initialization and server startup are not read-only actions. Never execute them during read-only qualification or against a live installation; use isolated synthetic fixtures only within approved scope. Repository-wide AGENTS.md, security policy, applicable accepted ADRs and the bounded ExecPlan govern. The historical guidance is retained; relative link destinations are reconciled where the pinned repository contains the target. Missing historical targets are shown as literal references, not asserted to exist.
+
+## G0.2 historical reference clarification
+
+The historical app/models shorthand is not a current directory; domain entities and schemas are under app/domain and app/schemas, persistence under infrastructure/database. Historical examples and shorthand references are contextual, not verified destinations or authorization. Follow [AGENTS.md](../AGENTS.md) and [guidelines](../docs/guidelines.md).
