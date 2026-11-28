@@ -25,7 +25,7 @@ SQLite WAL, repository protocols and hardware-aware memory settings exist. JSON 
 
 ## Proposed lifecycle and trust boundaries
 
-Construct -> acquire exclusive authority -> initialize -> reconcile outstanding work/device state -> run -> quiesce -> safely reconcile -> dispose -> release authority. Failed/unknown ownership or unreconciled equipment blocks ordinary energization. Start with single control-capable process plus qualified shared OS locking boundary; multi-host fencing or dedicated runtime process is a later decision. A single worker alone is insufficient. Read-only web mode cannot auto-register equipment or start control jobs. Never prevent appropriate independent emergency protection. Shutdown must retain authority until appropriate reconciliation; safe states depend on device and installation.
+Passive construct -> acquire exclusive authority (reconciliation only) -> establish recovery evidence and qualified initialization prerequisites without ordinary effects -> reconcile outstanding work/device state (qualified bounded recovery effects only) -> qualified ordinary admission/run -> quiesce -> safely reconcile -> qualified disposal -> release authority. Failed/unknown ownership or unreconciled equipment blocks ordinary energization. Start with single control-capable process plus qualified shared OS locking boundary; multi-host fencing or dedicated runtime process is a later decision. A single worker alone is insufficient. Read-only web mode cannot auto-register equipment or start control jobs. Never prevent appropriate independent emergency protection. Shutdown must retain authority until appropriate reconciliation; safe states depend on device and installation.
 
 Human/API/scheduler/controller/AI intent -> verified identity and resource authorization -> exclusive runtime -> deterministic safety -> adapter -> device outcome -> evidence. Unknown state is not success. Best-effort EventBus is not a durable safety command queue. Physical resource identity is independent of unit IDs; shared pump requires qualified water path. Manual watering does not issue pump commands. Preserve device-specific independent protection; no universal operating limits approved.
 
@@ -34,7 +34,7 @@ Human/API/scheduler/controller/AI intent -> verified identity and resource autho
 | ID | Requirement |
 |---|---|
 | INV-001 | One authorized physical runtime per installation |
-| INV-002 | Construction cannot grant physical authority |
+| INV-002 | Passive construction and non-owner paths cannot grant physical authority or produce unauthorized consequential interface effects |
 | INV-003 | All energizing paths pass mandatory safety |
 | INV-004 | Ownership enforced before operations |
 | INV-005 | Unit stop cannot interrupt other units |
@@ -48,9 +48,9 @@ Human/API/scheduler/controller/AI intent -> verified identity and resource autho
 
 | ID | Safety acceptance invariant |
 |---|---|
-| SAFE-001 | Exclusive runtime executes physical commands |
-| SAFE-002 | Authorized principal and resource for every command |
-| SAFE-003 | Deterministic safety on all energization |
+| SAFE-001 | Exclusive runtime owns ordinary consequential interface effects including lifecycle paths; independent protective mechanisms and narrowly qualified emergency recovery remain distinct |
+| SAFE-002 | Authorized human or explicitly scoped service principal, resource and action for every ordinary consequential effect |
+| SAFE-003 | Deterministic device-specific safety on all consequential effects including initialization and cleanup |
 | SAFE-004 | Required irrigation approval revalidated at execution |
 | SAFE-005 | Missing/stale required observations block ordinary autonomous execution |
 | SAFE-006 | Dispatch distinct from physical verification |
@@ -92,3 +92,9 @@ Failure of a stage does not erase possible device effects. Track operation proce
 D0 must define the authoritative atomic durable admission event, revocation ordering, transport submission, delivery, expiry and fencing capability per transport. A committed admission is not delivery. Cancellation after admission attempts qualified cancellation if supported and reconciles effects; revocation after admission cannot be assumed to prevent delivery. If stale or delayed effects cannot be reliably excluded, preserve durable uncertainty and inhibit affected resources. Record operation identity, resource, owner epoch, policy revision, validity and recovery evidence before any consequential submission; missing/corrupt/stale recovery data fails closed. Never blindly replay.
 
 Independent intervention invalidates pre-intervention ordinary authority. Emergency permission is restricted to qualified recovery, not ordinary energization. Rearm requires device-specific qualified conditions, reconciliation, invalidation of stale work, and fresh ordinary admission. Protection reset alone grants no authority. Minimum durable recovery precedes any consequential dispatch; R2b qualifies bounded process/dispatch ownership only; full F-001 closure at Q after R3a/R3b. See [D0 contracts](../plans/D0-CONTRACTS.md) and [qualification profiles](../qualification/QUALIFICATION-PROFILES.md). These are proposed requirements, not accepted design or implemented safeguards.
+
+## G0.3 physical-interface containment and combined recovery
+
+A consequential physical-interface effect includes any operation capable of altering device state, output configuration, transport/device command queues or protective behavior. Cover construction, registration, initialization, discovery, reconnect/replay, normal dispatch, disposal and cleanup. Non-owner or inhibited ordinary paths must produce zero unauthorized consequential interface effects, not merely zero command method calls. Qualify instrumentation at the lowest relevant synthetic GPIO/transport/device boundary using actual composed services; include pin mode/setup, cleanup, publication/replay and state-restoring initialization as applicable. Passive observation is not authority for consequential initialization. Unknown effect classification is denied. Consequential initialization or cleanup requires qualified ownership, resource/action permission, recovery evidence and device-specific safety; no ordinary effects until R2a minimum recovery and applicable command contracts exist. Separately bounded and qualified emergency/reconciliation mechanisms are not ordinary authority; do not obstruct independent protection.
+
+Protective intervention, invalidated authority, durable emergency inhibition, unresolved transport effects and physical quarantine must be reconciled jointly after process loss or stale restoration. A safe observation cannot clear earlier unresolved effects; absent reliable evidence fail closed. Qualified rearm requires applicable recovery/protective conditions, exclusion of stale effects and fresh authorization. EP-007 determines scoped human/service permissions (scheduler, controllers, calibration, ML, workers and future integrations); EP-003A enforces them before consequential effects with no privileged fallback. EP-001/002 own passive lifecycle; EP-003D quarantine policy; EP-004 reliable persistence. See [D0 contracts](../plans/D0-CONTRACTS.md) and [remediation](../plans/REMEDIATION.md). Requirements only.
