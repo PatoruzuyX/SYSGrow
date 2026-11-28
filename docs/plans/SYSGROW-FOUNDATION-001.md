@@ -28,3 +28,7 @@ G0.2 supersedes G0.1 planning sequence only as a proposed documentation correcti
 ## G0.3 profile advancement
 
 Preserve D0–R1a/R1b–R2a/R2b–R3a/R3b–Q. Apply [qualification profiles](../qualification/QUALIFICATION-PROFILES.md) for CP3–CP7 activity-specific prerequisites, HIL authority and scoped Q outcomes. Synthetic PASS does not qualify hardware or waive activation prerequisites. Isolated activities may collect their own evidence under satisfied relevant prerequisites and separate authorization. CP7 records unresolved gates, not automatic acceptance. FT-001–045 are designs only. G0.3 has no physical or runtime authorization.
+
+## Proposed EGA-001 reference
+
+Original CP0–CP2 provenance remains mandatory unless the separately independently qualified, exact-candidate limited substitution in [EGA-001](../qualification/EVIDENCE-GOVERNANCE-AMENDMENT.md) is explicitly accepted and recorded; only the enumerated original-report prerequisite may be substituted. Preserve all other G0 gates, staged D0–Q and profile boundaries. No ADR acceptance or implementation authority.

@@ -32,3 +32,7 @@ G0.2 Reviewer 3 observed `protected: false`, `protection.enabled: false`, requir
 ## Convergence
 
 Stabilize the documentation and resolve evidence via separately authorized activities. If recovery requires another candidate commit, reverify exact SHA/tree, CI and all three independent final reviews on that resulting revision. Record final evidence outside candidate tree via [qualification profiles](QUALIFICATION-PROFILES.md). Owner integration approval remains separate. All 44 findings OPEN; production safety NOT QUALIFIED.
+
+## R1 reference — proposed, not accepted
+
+[Replacement matrix](EVIDENCE-REBASELINE-001.md), [R1 correction record](EVIDENCE-REBASELINE-R1-REVIEW.md) and [primary structural crosswalk](EVIDENCE-RECOVERY-CROSSWALK.md) record new evidence. [EGA-001](EVIDENCE-GOVERNANCE-AMENDMENT.md) defines the proposed exact-candidate limited substitution and separate canonical integration; original-report gate remains binding until valid independent qualification and explicit owner acceptance. ER-05 enforcement remains mandatory before integration. No execution authority for administrative changes.

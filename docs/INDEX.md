@@ -84,3 +84,8 @@ For new users, only the docs in the "Start Here" section are required.
 
 - [Replacement technical qualification candidate](qualification/EVIDENCE-REBASELINE-001.md), [ER-01–05 recovery crosswalk](qualification/EVIDENCE-RECOVERY-CROSSWALK.md), [proposed evidence governance amendment](qualification/EVIDENCE-GOVERNANCE-AMENDMENT.md), [independent review assignments](qualification/EVIDENCE-REBASELINE-REVIEW.md).
 - Historical records remain unchanged. Replacement basis not accepted; all 44 findings OPEN, production safety NOT QUALIFIED. No integration authorization.
+
+## Evidence rebaseline R1 (proposed; HOLD)
+
+- [R1 correction record](qualification/EVIDENCE-REBASELINE-R1-REVIEW.md), [replacement matrix](qualification/EVIDENCE-REBASELINE-001.md), [primary structural evidence](qualification/EVIDENCE-RECOVERY-CROSSWALK.md), [proposed EGA-001 lifecycle](qualification/EVIDENCE-GOVERNANCE-AMENDMENT.md), [review assignments](qualification/EVIDENCE-REBASELINE-REVIEW.md).
+- [Reviewer 1](qualification/reviews/EVIDENCE-REBASELINE-reviewer-1.md), [Reviewer 2](qualification/reviews/EVIDENCE-REBASELINE-reviewer-2.md), [Reviewer 3](qualification/reviews/EVIDENCE-REBASELINE-reviewer-3.md), [manifest](qualification/reviews/PROVENANCE.md). Original HOLDs at superseded initial rebaseline HEAD.

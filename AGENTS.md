@@ -23,3 +23,7 @@ Status: G0/G0.1/G0.2/G0.3 candidate; repository governance becomes effective onl
 ## Closeout
 
 Report baseline and final HEAD, changed paths, finding dispositions, tests and evidence, unresolved risks, decisions made without explicit guidance, review and integration status. Never close findings merely because documentation or a plan exists.
+
+## Evidence governance amendment (proposed, not effective)
+
+Read [EGA-001](docs/qualification/EVIDENCE-GOVERNANCE-AMENDMENT.md) for its proposed explicit lifecycle and enumerated original-report prerequisite. No substitution without independently qualified replacement and a separately recorded exact-candidate owner acceptance; retrieve the applicable PR record before relying on acceptance. Missing/conflicting records require HOLD. No new normative preservation policy until qualified authorized integration; no existing gate waived.

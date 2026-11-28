@@ -36,3 +36,7 @@ The applicable GitHub PR discussion/review history is canonical. Use exact revis
 After separately authorized integration, record approved candidate SHA, resulting integration SHA, method, ancestry or content-equivalence verification, resulting main ref, outcome, unresolved risks and restrictions. Post-integration evidence does not retroactively grant approval. A later documentation record commit is separately authorized and reviewed. No automatic merge, deployment or activation.
 
 G0.1 and G0.2 reviews concern their respective superseded HEADs only. Preserve historical evidence; obtain three new final exact-HEAD reports after candidate stabilization and applicable evidence recovery. See [G0.3 review record](G0.3-REVIEW.md).
+
+## Proposed replacement evidence applicability
+
+[EGA-001](EVIDENCE-GOVERNANCE-AMENDMENT.md) remains PROPOSED. Original-report provenance requirement persists until valid limited substitution, distinct from canonical integration and all other mandatory evidence. For bounded application source findings, document unknown operational/firmware evidence with accountable future qualification; missing source evidence needed to support the claim is HOLD. Do not mark unavailable downstream trust N/A, and require applicable EP-007/EP-003B/F maintenance/security/device evidence before maintenance or activation qualification. No G0 physical qualification.

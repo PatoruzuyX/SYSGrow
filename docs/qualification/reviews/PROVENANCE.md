@@ -15,3 +15,15 @@ The SHA-256 values below were computed on the supplied mounted UTF-8 attachment 
 | G0.2 Reviewer 3 | Pasted text (3)(1).txt | [G0.2-reviewer-3.md](G0.2-reviewer-3.md) | `08b55b7d783059cc83e423e305e2ded4f67b29c2` | 679 | `bd375b1203508bf3617c6f27ce656b74909409d1fbf94a3ef0ed725b6d4e29fd` |
 
 Final archive tree/byte comparison and candidate SHA belong to the PR evidence record. Prior G0.1 archived blobs are retained unmodified. Original CP0–CP2 qualification reports are not these reviews and remain unrecovered as complete durable originals. See [evidence workstreams](../EVIDENCE-WORKSTREAMS.md).
+
+## R1 rebaseline independent reviewer attachments
+
+Reviewed candidate `a10107a4f78eea8c37a0b1a6ab7d616a61b4df87`, tree `6afe5fa9a1838137e80a290ccbb35eab6ea70172`, original baseline `2ab6bfa764c8ad587a027bd3b5155b53b7e5ae21`. Retrieved all three complete texts from Library by exact file identity and contiguous line windows. Raw materialization unavailable; reconstructed text joined using original line separators, UTF-8 SHA-256 recomputed and matched all previously supplied attachment checksums exactly. This establishes attachment-content fidelity, not independent session authentication or original CP reports. All original HOLD dispositions retained, no edits to review text.
+
+| Report | Original attachment | Archive | Bytes | Lines | SHA-256 |
+|---|---|---|---:|---:|---|
+| R1 Architecture/governance | Pasted text(6).txt | [reviewer 1](EVIDENCE-REBASELINE-reviewer-1.md) | 47593 | 938 | c8a6de045b5be670154b480bb65d38ab763c1f70cb9c6f12c94543bd78c41b53 |
+| R2 Security/physical safety | Pasted text (2)(5).txt | [reviewer 2](EVIDENCE-REBASELINE-reviewer-2.md) | 71468 | 1149 | 881199c804d0c241a6f7d143e34630711645d3e5fe23d0423d610662122cc93a |
+| R3 Evidence/integration/ML | Pasted text (3)(4).txt | [reviewer 3](EVIDENCE-REBASELINE-reviewer-3.md) | 61751 | 1358 | 809cfedd98a1b95f6ffa671f290bbee24ac1b15b6458ff315dd84c3e6ded6918 |
+
+Final archive Git blob readback equality and candidate tree identity must be verified before branch update and recorded in PR evidence. No original report provenance claim.
